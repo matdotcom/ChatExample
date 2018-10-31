@@ -6,7 +6,7 @@ var app = require('express')(),
 
 // Loading the page index.html
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index.html');
+  res.sendfile(__dirname + '/index.html');
 });
 
 io.sockets.on('connection', function (socket, username) {
@@ -24,4 +24,4 @@ io.sockets.on('connection', function (socket, username) {
     }); 
 });
 
-server.listen(8080);  
+server.listen(3000);  
